@@ -23,7 +23,7 @@ public class DownloadServlet extends BaseServlet {
         //4.设置响应头 告知浏览器要用的下载模式
         this.getResponse().addHeader("Content-Disposition","attachment;filename="+filename);
 
-        //5. 把文件响应回去
+        //5. 把文件响应回去 1111111111111
         ServletOutputStream outputStream = this.getResponse().getOutputStream();
         outputStream.write(data);
 
